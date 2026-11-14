@@ -21,6 +21,16 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) co
   architectures and workloads, and the research section lists all three
   LLMServingSim publications.
 
+### Changed
+
+- Split the coding-agent guide by directory. The root `AGENTS.md` (also read
+  as `CLAUDE.md`) keeps repository-wide rules, commit policy, validation and
+  common pitfalls; profiler, simulator and bench contracts move verbatim to
+  `profiler/AGENTS.md`, `serving/AGENTS.md` and `bench/AGENTS.md`, each with a
+  `CLAUDE.md` symlink, so agents load them only when working in that
+  directory. The repository tree and the trace-generator helper list, which
+  the source already shows, are removed.
+
 ### Fixed
 
 - State the MIT License in the website footer and contributor welcome page,

@@ -220,7 +220,7 @@ opportunity.
 | User-facing docs (this site) | `docs/` |
 | Per-module developer notes | `<module>/README.md` (each top-level Python module has one) |
 | Top-level project README | `README.md` |
-| Project context for AI agents | `CLAUDE.md` (mirrors `AGENTS.md`) |
+| Project context for AI agents | `AGENTS.md` (repository-wide; `CLAUDE.md` mirrors it), plus `profiler/`, `serving/` and `bench/AGENTS.md` for directory-specific contracts |
 
 When you change behavior, update the relevant page under
 `docs/`. When you add a feature, also update the module's
